@@ -14,12 +14,8 @@ def all_odd(number_list):
         []
 
     """
-    
-    odd_numbers = []
-    
-    for number in number_list:
-        if number % 2 == 1:
-            odd_numbers.append(number)
+
+    odd_numbers = [number for number in number_list if number % 2 == 1]
 
     return odd_numbers
 
@@ -34,12 +30,8 @@ def all_even(number_list):
         []
 
     """
-    
-    even_numbers = []
-    
-    for number in number_list:
-        if number % 2 == 0:
-            even_numbers.append(number)
+
+    even_numbers = [number for number in number_list if number % 2 == 0]
 
     return even_numbers
 
@@ -64,6 +56,7 @@ def print_indexes(my_list):
 
     """
 
+    # for item in 
 
     print "Nothing at all"
 
@@ -190,10 +183,10 @@ def word_lengths(word_list):
 
     for item in word_list:
         length = 0
-        
+
         for character in item:
             length += 1
-        
+
         word_lengths.append(length)
 
     return word_lengths
@@ -220,7 +213,7 @@ def sum_numbers(number_list):
 
     else:
         summing = number_list[0]
-        
+
         if number_list[1]:
             for number in number_list[1:]:
                 summing += number
