@@ -64,7 +64,6 @@ def print_indexes(my_list):
 
     """
 
-    
 
     print "Nothing at all"
 
@@ -103,7 +102,13 @@ def smallest_int(number_list):
 
     """
 
-    return 100
+    min_integer = number_list[0]
+
+    for number in number_list:
+        if number < min_integer:
+            min_integer = number
+
+    return min_integer
 
 
 def largest_int(number_list):
