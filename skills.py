@@ -56,9 +56,8 @@ def print_indexes(my_list):
 
     """
 
-    # for item in 
-
-    print "Nothing at all"
+    for item in my_list:
+        print index, item
 
 
 def long_words(word_list):
