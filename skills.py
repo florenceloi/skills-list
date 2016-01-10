@@ -133,6 +133,9 @@ def largest_int(number_list):
 
     """
 
+    if not number_list:
+        return None
+
     max_integer = number_list[0]
 
     for number in number_list:
