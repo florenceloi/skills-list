@@ -236,7 +236,17 @@ def mult_numbers(number_list):
 
     """
 
-    return None
+    if not number_list:
+        return 1
+
+    else:
+        multiplying = number_list[0]
+
+        if number_list[1]:
+            for number in number_list[1:]:
+                multiplying *= number
+
+        return multiplying
 
 
 def join_strings(word_list):
