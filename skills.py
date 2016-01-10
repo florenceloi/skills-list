@@ -79,7 +79,18 @@ def long_words(word_list):
 
     """
 
-    return ['the wrong thing']
+    long_words = []
+
+    for item in word_list:
+        length = 0
+
+        for character in item:
+            length += 1
+
+        if length > 4:
+            long_words.append(item)
+
+    return long_words
 
 
 def smallest_int(number_list):
@@ -313,24 +324,6 @@ def join_strings_with_comma(list_of_words):
         'Pretzel'
 
     """
-
-    # if not list_of_words:
-    #     return ""
-
-    # el
-
-    # if not list_of_words[1]:
-    #     return list_of_words[0]
-
-    # else:
-    #     joined_strings_with_comma = list_of_words[0]
-
-    #     for item in list_of_words[1:]:
-    #         joined_strings_with_comma += ", "
-    #         joined_strings_with_comma += item
-
-    #     return joined_strings_with_comma
-
 
     try:
         joined_strings_with_comma = list_of_words[0]
