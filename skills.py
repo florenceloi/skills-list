@@ -14,8 +14,14 @@ def all_odd(number_list):
         []
 
     """
+    
+    odd_numbers = []
+    
+    for number in number_list:
+        if number % 2 == 1:
+            odd_numbers.append(number)
 
-    return ['the wrong thing']
+    return odd_numbers
 
 
 def all_even(number_list):
@@ -28,8 +34,14 @@ def all_even(number_list):
         []
 
     """
+    
+    even_numbers = []
+    
+    for number in number_list:
+        if number % 2 == 0:
+            even_numbers.append(number)
 
-    return ['the wrong thing']
+    return even_numbers
 
 
 def print_indexes(my_list):
@@ -51,6 +63,8 @@ def print_indexes(my_list):
         2 Volvo
 
     """
+
+    
 
     print "Nothing at all"
 
