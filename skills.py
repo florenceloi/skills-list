@@ -314,12 +314,39 @@ def join_strings_with_comma(list_of_words):
 
     """
 
-    return ""
+    # if not list_of_words:
+    #     return ""
+
+    # el
+
+    # if not list_of_words[1]:
+    #     return list_of_words[0]
+
+    # else:
+    #     joined_strings_with_comma = list_of_words[0]
+
+    #     for item in list_of_words[1:]:
+    #         joined_strings_with_comma += ", "
+    #         joined_strings_with_comma += item
+
+    #     return joined_strings_with_comma
 
 
-##############################################################################
-# END OF ASSIGNMENT: You can ignore everything below.
+    try:
+        joined_strings_with_comma = list_of_words[0]
 
+        for item in list_of_words[1:]:
+            joined_strings_with_comma += ", "
+            joined_strings_with_comma += item
+
+        return joined_strings_with_comma
+
+    except IndexError:
+        return list_of_words[0]
+
+
+#############################################################################
+# END OF ASSIGNMENT: You can ignore everything below
 
 if __name__ == "__main__":
     import doctest
