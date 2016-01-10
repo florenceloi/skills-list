@@ -265,7 +265,17 @@ def join_strings(word_list):
 
     """
 
-    return "Not the right thing"
+    if not word_list:
+        return ""
+
+    else:
+        joined_strings = word_list[0]
+
+        if word_list[1]:
+            for item in word_list[1:]:
+                joined_strings += item
+
+        return joined_strings
 
 
 def average(number_list):
